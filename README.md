@@ -27,12 +27,31 @@ Python / Tkinterで開発した、学生団体向けの在庫管理アプリで�
 
 ## 実行方法
 
-Python環境を用意し、必要なライブラリをインストールしたうえで実行してください。
+### 動作環境
+
+### Pythonから実行
+
+必要なライブラリをインストールします。
 
 ```bash
 pip install -r requirements.txt
+```
+
+アプリケーションを実行します。
+
+```bash
 python inventory-management.py
 ```
+
+### exeファイルのビルド
+
+PyInstallerを使用してexeファイルを生成できます。
+
+```bash
+pyinstaller inventory-management.spec
+```
+
+生成されたexeファイルは `dist` ディレクトリ内に配置されます。
 
 ## 注意事項
 
